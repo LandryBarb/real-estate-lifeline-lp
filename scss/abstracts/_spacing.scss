@@ -1,0 +1,18 @@
+﻿$spacing-base: 1rem;
+$lg-value: 1;
+
+$spacing:
+(
+  
+    space:
+    (
+        "xs-sm":clamp(0.75rem, calc(0.59rem + 0.78vw), 1.25rem),
+        "sm-m":clamp(1.00rem, calc(0.73rem + 1.36vw), 1.88rem),
+        "m-l":clamp(1.50rem, calc(1.19rem + 1.55vw), 2.50rem),
+        "l-xl":clamp(2.00rem, calc(1.46rem + 2.72vw), 3.75rem),
+        "xl-2xl":clamp(3.00rem, calc(2.38rem + 3.11vw), 5.00rem),
+        "2xl-3xl":clamp(4.00rem, calc(2.91rem + 5.44vw), 7.50rem),
+      
+
+    )
+);

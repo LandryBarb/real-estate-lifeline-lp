@@ -1,0 +1,72 @@
+﻿
+@use '../abstracts' as *;
+
+
+:root {
+    /***** 
+    START Color Palette
+    *******/
+    @each $color, $themes, $shades in $clr-theme{
+        @each $theme, $shades in $themes{
+            @each $shade, $value in $shades{
+                --clr-#{$color}-#{$theme}-#{$shade}: #{$value};
+            }
+        }
+    }
+  
+        /*****
+        End COLOR PALETTE
+        *****/
+
+    /**Font Scale **/
+    @each $step, $sizes in $font-scale {
+        @each $size, $value in $sizes {
+            --step-#{$size}: #{$value};
+        }
+    }
+    /**End Font Scale **/
+    /**Font Weights**/
+    @each $font-size, $value in $font-weights {
+        --fw-#{$font-size}: #{$value};
+    }
+    /**End Font Weights**/
+
+     /**SPACING**/
+     @each $space-size, $names in $spacing {
+        @each $name, $value in $names {
+            --space-#{$name}: #{$value};
+        }
+    }
+    /**End SPACING**/
+
+
+    --site-bg: hsl(var(--clr-primary-light-700));
+    --body:hsl(var(--clr-base-black));
+
+   
+
+
+    
+    --ff-global:'Roboto', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 600;
+    --fw-strong:800;
+
+    --fs-top-level-heading:var(--step-5);
+    --fs-mid-level-heading:var(--step-3);
+    --fs-sub-level-heading:var(--step-1);
+    --fs-body: var(--step-2);
+    --fs-primary-links: var(--step-2);
+
+    --margin-1:var(--space-xs-sm);
+    --margin-2:var(--space-sm-m);
+    --margin-3:var(--space-m-l);
+    --margin-4:var(--space-l-xl);
+ 
+
+   
+
+   
+
+   
+}

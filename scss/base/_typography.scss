@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+
+
+
+
+
+h1 {
+    
+    font-size: var(--fs-top-level-heading);
+}
+
+h2 {
+    font-size: var(--fs-mid-level-heading);
+}
+
+h3 {
+    font-size: var(--fs-sub-level-heading);
+}
+
+p {
+   
+    font-family: var(--ff-global);
+    font-size: var(--fs-body);
+}
+
+
+
+

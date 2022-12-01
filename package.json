@@ -1,0 +1,16 @@
+{
+  "name": "real-estate-lifeline-lp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx sass Scss:dist/css",
+    "sass:watch": "npx sass --watch Scss:dist/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
